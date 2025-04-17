@@ -42,12 +42,12 @@ void mergeSort(int low, int high){
     mergeSort(mid + 1, high); //step 3.b
 
     //step 4
-    int i = low; //step 4.a
-    int j = mid + 1; //step 4.b
-    int k = low; //step 4.clll
+    int i = low;        //step 4.a
+    int j = mid + 1;    //step 4.b
+    int k = low;        //step 4.c
     
-    while (i <= mid && j <= high){ //step 4.d
-        if (arr[i] <= arr[j]){ //step 4.d.i
+    while (i <= mid && j <= high){  //step 4.d
+        if (arr[i] <= arr[j]){      //step 4.d.i
             B[k] = arr[i];
             i++;
         } 
